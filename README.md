@@ -24,6 +24,9 @@ funtion Two (call_one) {
 Two(One);
 ```
 
+![ezi9ogz0ergprgkmu68a](https://github.com/rodgersxy/JavaScript/assets/47353893/9e12c497-5285-47ce-abd1-f38a94ea5415)
+
+
 # Promises
 <h4>Pending:</4> This is the initial stage. Nothing happens here. Think of it like this, your customer is taking their time giving you an order. But they haven't ordered anything yet.   
 <h4>Resolved:</h4> This means that your customer has received their food and is happy.   
