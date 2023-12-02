@@ -77,3 +77,47 @@ myPromise.then((result) => {
 // If the operation fails, "Operation failed" will be logged.
 
 ```
+
+<h1>async/await<h1>
+
+```
+// Pseudo code demonstrating Async/Await in JavaScript
+
+// Define an asynchronous function using the "async" keyword
+async function fetchDataFromAPI() {
+  try {
+    // Use the "await" keyword to wait for a Promise to resolve
+    let response = await fetch('https://api.example.com/data');
+    
+    // The execution pauses until the Promise is resolved
+    let data = await response.json();
+
+    // Process the data
+    console.log('Data from API:', data);
+
+    return data; // This value will be wrapped in a resolved Promise
+  } catch (error) {
+    // Handle errors
+    console.error('Error fetching data:', error);
+    throw error; // This will reject the Promise
+  }
+}
+
+// Example usage:
+async function processData() {
+  try {
+    // Call the asynchronous function and wait for it to complete
+    let result = await fetchDataFromAPI();
+
+    // Continue processing with the result
+    console.log('Processing result:', result);
+  } catch (error) {
+    // Handle errors from fetchDataFromAPI or subsequent processing
+    console.error('Error processing data:', error);
+  }
+}
+
+// Invoke the main function
+processData();
+
+```
