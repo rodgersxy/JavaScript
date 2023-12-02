@@ -78,7 +78,7 @@ myPromise.then((result) => {
 
 ```
 
-<h1>async/await<h1>   
+# async/await   
 
 ```
 // Pseudo code demonstrating Async/Await in JavaScript
