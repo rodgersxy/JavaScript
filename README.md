@@ -26,6 +26,10 @@ Two(One);
 ![jlm7zwonbxszeaccyohv](https://github.com/rodgersxy/JavaScript/assets/47353893/6144bea7-9025-4a71-9ebc-285378fa8255)
 
 
+<h1>PROMISES<h1>
+
+
+
 ![ezi9ogz0ergprgkmu68a](https://github.com/rodgersxy/JavaScript/assets/47353893/9e12c497-5285-47ce-abd1-f38a94ea5415)
 
 
