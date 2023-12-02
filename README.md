@@ -24,10 +24,11 @@ funtion Two (call_one) {
 Two(One);
 ```
 
-<h1>PROMISES<h1>
+
 ![jlm7zwonbxszeaccyohv](https://github.com/rodgersxy/JavaScript/assets/47353893/1a3409af-0aa7-4d7e-b0e2-7d2377b5360f)
 
-<h4>promises</h4>
+
+<h1>PROMISES<h1>
 
 ![ezi9ogz0ergprgkmu68a](https://github.com/rodgersxy/JavaScript/assets/47353893/9e12c497-5285-47ce-abd1-f38a94ea5415)
 
