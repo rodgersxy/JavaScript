@@ -1,4 +1,4 @@
-# JavaScript Async/Await Tutorial – Learn Callbacks, Promises, and Async/Await in JS by Making Ice Cream
+# JavaScript Async/Await Tutorial – Learn Callbacks, Promises, and Async/Await in JS
 ---------------------------------------------------------------------------------------------------
 ## Synchronous vs Asynchronous JavaScript
 -------------------------------------------
