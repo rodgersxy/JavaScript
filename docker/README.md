@@ -40,5 +40,25 @@ Containers are an abstraction at the app layer that packages code and dependenci
  Container is simply a running instance of an image  
  ### example how run:  
  docker run -d nginx:latest  
- docker container ls (to check if it is running)  
- Preferred way of check list of running container (docker ps)
+ docker container ls -------- (to check if it is running)  
+ Preferred way of check list of running container ------ (docker ps)   
+ docker stop (CONTAINER ID)   ---- to stop the container  
+ docker run -d -p 8080:80    ------- to specify or map port
+ docker run -d -p 8080:80 -p 3000:80 ----------- to map multiple ports   
+ docker stop suspicious_villani    | TO START AND STOP CONTAINER USING CONTAINER NAME INSTEAD OF CONTAINER ID
+ docker start suspicious_villani   |    
+ docker rm (CONTAINER ID) ------- To remove the specific container
+ docker ps -a ---------- To list all containers  
+ docker ps -aq and docker rm $(docker ps -aq) =========== To delete all containers   
+ docker rm -f $(docker ps -aq)  -------------- To force delete all container   
+
+ ### Show All Containers With Pretty-Print Formatting   
+ docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Networks}}\t{{.State}}\t{{.CreatedAt}}"
+
+
+ ### page served by nginx and docker
+  docker run --name website -v $(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx   
+  * container name -- website
+  * pwd(current directory)   
+
+  * docker run --name website-copy --volumes-from website -d -p 8081:80 nginx  (to copy content from website to website-copy/basically to create a copy running in a different port)   
