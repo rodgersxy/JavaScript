@@ -61,4 +61,14 @@ Containers are an abstraction at the app layer that packages code and dependenci
   * container name -- website
   * pwd(current directory)   
 
-  * docker run --name website-copy --volumes-from website -d -p 8081:80 nginx  (to copy content from website to website-copy/basically to create a copy running in a different port)   
+  * docker run --name website-copy --volumes-from website -d -p 8081:80 nginx  (to copy content from website to website-copy/basically to create a copy running in a different port)
+
+![Screenshot from 2023-12-17 11-19-56](https://github.com/rodgersxy/JavaScript/assets/47353893/8f7e7876-d8fc-4d94-b739-007f1e0aab6b)
+
+# IMAGE 2
+![Screenshot from 2023-12-17 11-21-08](https://github.com/rodgersxy/JavaScript/assets/47353893/271be165-86bd-4684-bdab-c6e150c21695)
+
+# IMAGE 3   
+
+
+
