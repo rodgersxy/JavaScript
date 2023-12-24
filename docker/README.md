@@ -30,17 +30,24 @@ Containers are an abstraction at the app layer that packages code and dependenci
  * Deployment  
  * Testing   
 
+ ## Docker Daemon  
+ Docker Daemon is the boss and it is a background process that manages Docker images, containers, networks, and storage volumes  
+
  ## Docker Image  
  Image is a template for creating an environment of your choice  
  It has everything you need to run your Apps  
  Image is also a snapshot
  An image contains an OS,Software, App Code   
 
+## Dockerfile  
+Dockerfile has the instruction or commands that explains to the docker how to and what to build  cl
+
  ## Container  
  Container is simply a running instance of an image  
  ### example how run:  
  docker run -d nginx:latest  
  docker container ls -------- (to check if it is running)  
+ docker container ls --all -- (To see all the runnable containers existing in your system)   
  Preferred way of check list of running container ------ (docker ps)   
  docker stop (CONTAINER ID)   ---- to stop the container  
  docker run -d -p 8080:80    ------- to specify or map port
@@ -50,7 +57,23 @@ Containers are an abstraction at the app layer that packages code and dependenci
  docker rm (CONTAINER ID) ------- To remove the specific container
  docker ps -a ---------- To list all containers  
  docker ps -aq and docker rm $(docker ps -aq) =========== To delete all containers   
- docker rm -f $(docker ps -aq)  -------------- To force delete all container   
+ docker rm -f $(docker ps -aq)  -------------- To force delete all container 
+ ### docker images  
+ docker images to show all top-level images, their repository, tags, and their size.  
+ ### docker build  
+ This command is used to build an image from a Dockerfile  
+ ### Build from local machine  
+ When you have the Dockerfile in your host machine, navigate to the folder and run  
+ ```
+ docker build -t image_name:tag  
+ ```  
+ ### Build from GitHub or remote URL  
+ ```
+ docker build github.com/creack/docker-firefox   
+ ```
+
+ ### docker rmi  
+ There are times when you want to clean up the unnecessary images stored in host/local machine. Use rmi to remove one or more images.   
 
  ### Show All Containers With Pretty-Print Formatting   
  docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Networks}}\t{{.State}}\t{{.CreatedAt}}"
